@@ -17,6 +17,6 @@ Course webpages and notes.
 - [CSC416: Artificial Intelligence I](
     http://dwysocki.github.io/csc416/)
 - [CSC444: Compiler](
-    http://dwysocki.github.io/csc444/)
+    http://dwysocki.github.io/csc444/notes.html)
 - [CSC466: Artificial Intelligence II](
     http://dwysocki.github.io/csc466/)
