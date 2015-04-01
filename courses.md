@@ -20,3 +20,8 @@ Course webpages and notes.
     http://dwysocki.github.io/csc444/notes.html)
 - [CSC466: Artificial Intelligence II](
     http://dwysocki.github.io/csc466/)
+
+# Physics
+
+- [PHY437: Advanced Quantum Mechanics](
+    https://dwysocki.github.io/phy437/)
