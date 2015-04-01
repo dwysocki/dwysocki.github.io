@@ -6,6 +6,8 @@ permalink: /courses/
 
 Course webpages and notes.
 
+Disclaimer: *I do not claim ownership of any materials taken from textbooks in my class notes. If you believe I have made unfair usage of copyrighted materials please let me know and I will remove them.*
+
 # Computer Science
 
 - [CSC344: Programming Languages](
@@ -20,6 +22,15 @@ Course webpages and notes.
     http://dwysocki.github.io/csc444/notes.html)
 - [CSC466: Artificial Intelligence II](
     http://dwysocki.github.io/csc466/)
+
+# Mathematics
+
+- [MAT215: Discrete Mathematics](
+    {{ site.baseurl }}/assets/notes/discrete-notes.pdf)
+- [MAT348: Ordinary Differential Equations](
+    {{ site.baseurl }}/assets/notes/ode-notes.pdf)
+- [MAT448: Partial Differential Equations](
+    {{ site.baseurl }}/assets/notes/pde-notes.pdf)
 
 # Physics
 
