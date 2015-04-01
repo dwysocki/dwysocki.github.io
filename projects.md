@@ -16,5 +16,7 @@ completed.
 
 # Computer Science
 
+- [Hidden Markov Music (ongoing)](
+    https://github.com/dwysocki/hidden-markov-music)
 - [MiniJava Compiler (complete)](
     https://github.com/dwysocki/mini-java)
