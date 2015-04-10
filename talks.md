@@ -11,6 +11,9 @@ Links to presentations and slides.
 - [Optimal Modeling of Variable Star Light Curves](
     http://cs.oswego.edu/~dwysocki/presentations/2015-04-15_quest_lightcurve.pdf)
 
+- [Morphology of the Large Magellanic Cloud Using Classical Cepheids](
+    http://cs.oswego.edu/~dwysocki/presentations/2015-04-10_surc_lmc-morphology.pdf)
+
 - [Git and GitHub (02/12/2015)](
     https://www.youtube.com/watch?v=irZF1VYDHJA)
 
