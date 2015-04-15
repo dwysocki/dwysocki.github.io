@@ -9,6 +9,9 @@ Links to slides and videos from presentations.
 
 # 2015
 
+- [Hidden Markov Music (QUEST, April 15, 2015)](
+    https://dwysocki.github.io/csc466/assets/presentations/hidden-markov-music-quest.pdf)
+
 - [Optimal Modeling of Variable Star Light Curves (QUEST, April 15, 2015)](
     http://cs.oswego.edu/~dwysocki/presentations/2015-04-15_quest_lightcurve.pdf)
 
