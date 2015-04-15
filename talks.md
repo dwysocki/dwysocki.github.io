@@ -12,6 +12,9 @@ Links to slides and videos from presentations.
 - [Hidden Markov Music (QUEST, April 15, 2015)](
     https://dwysocki.github.io/csc466/assets/presentations/hidden-markov-music-quest.pdf)
 
+- [Morphology of the Large Magellanic Cloud Using Classical Cepheids (QUEST, April 15, 2015)](
+    http://cs.oswego.edu/~dwysocki/presentations/2015-04-15_quest_lmc-morphology.pdf)
+
 - [Optimal Modeling of Variable Star Light Curves (QUEST, April 15, 2015)](
     http://cs.oswego.edu/~dwysocki/presentations/2015-04-15_quest_lightcurve.pdf)
 
