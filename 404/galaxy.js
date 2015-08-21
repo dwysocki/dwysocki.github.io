@@ -1,3 +1,6 @@
+---
+---
+
 /*jslint white: false, plusplus: false, onevar: false, browser: true,
  nomen: false, eqeqeq: false */
 var sqrt = Math.sqrt,
@@ -309,7 +312,7 @@ function init() {
     canvas.height = 240*2;
     document.body.appendChild(canvas);
     var resources = new ResourceLoader([
-            ['img', 'skymap', '404/sky.png']
+            ['img', 'skymap', '{{site.baseurl}}/404/sky.png']
 /*            ['img', 'dust', 'dust.png'],
             ['img', 'stars0', 'stars0.png'],
             ['img', 'stars1', 'stars1.png'],
