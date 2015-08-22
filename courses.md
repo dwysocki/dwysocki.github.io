@@ -8,7 +8,28 @@ Course webpages and notes.
 
 Disclaimer: *I do not claim ownership of any materials taken from textbooks in my class notes. If you believe I have made unfair usage of copyrighted materials please let me know and I will remove them.*
 
-# Computer Science
+# RIT
+
+## Astrophysical Sciences & Technology
+
+- [ASTP-601: Graduate Research Seminar I](
+    https://dwysocki.github.io/ASTP-601/)
+- [ASTP-613: Astronomical Observational Techniques and Instrumentation](
+    https://dwysocki.github.io/ASTP-613/)
+- [ASTP-617: Astrophysical Dynamics](
+    https://dwysocki.github.io/ASTP-617/)
+- [ASTP-760: Introduction to Relativity and Gravitation](
+    https://dwysocki.github.io/ASTP-760/)
+
+## Physics
+
+- [PHYS-211 (F'15): University Physics I (TA)](
+    https://dwysocki.github.io/PHYS-211-F15)
+
+
+# SUNY Oswego
+
+## Computer Science
 
 - [CSC344: Programming Languages](
     https://dwysocki.github.io/csc344/notes.html)
@@ -23,7 +44,7 @@ Disclaimer: *I do not claim ownership of any materials taken from textbooks in m
 - [CSC466: Artificial Intelligence II](
     http://dwysocki.github.io/csc466/)
 
-# Mathematics
+## Mathematics
 
 - [MAT215: Discrete Mathematics](
     {{ site.baseurl }}/assets/notes/discrete-notes.pdf)
@@ -32,7 +53,7 @@ Disclaimer: *I do not claim ownership of any materials taken from textbooks in m
 - [MAT448: Partial Differential Equations](
     {{ site.baseurl }}/assets/notes/pde-notes.pdf)
 
-# Physics
+## Physics
 
 - [PHY437: Advanced Quantum Mechanics](
     https://dwysocki.github.io/phy437/)
