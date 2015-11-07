@@ -9,6 +9,16 @@ Links to slides and videos from presentations.
 
 # 2015
 
+- [Improved fitting of periodic variable star light curves through regularized
+   regression (ASNY, November 7, 2015)](
+    {{ site.baseurl }}/talks/2015-11-07-wysocki-asny-lasso.pdf)
+
+
+- [Fourier analysis of variable star light curves using regularized regression
+   (October 30, 2015)](
+    {{ site.baseurl }}/talks/2015-10-30-wysocki-ast-jamboree.pdf)
+
+
 - [Hidden Markov Music (QUEST, April 15, 2015)](
     https://dwysocki.github.io/csc466/assets/presentations/hidden-markov-music-quest.pdf)
 
