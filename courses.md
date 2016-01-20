@@ -12,8 +12,8 @@ Disclaimer: *I do not claim ownership of any materials taken from textbooks in m
 
 ## Astrophysical Sciences & Technology
 
-- [ASTP-601: Graduate Research Seminar I](
-    https://dwysocki.github.io/ASTP-601/)
+- [ASTP-601/602: Graduate Research Seminar I/II](
+    https://dwysocki.github.io/ASTP-601-602/)
 - [ASTP-613: Astronomical Observational Techniques and Instrumentation](
     https://dwysocki.github.io/ASTP-613/)
 - [ASTP-617: Astrophysical Dynamics](
