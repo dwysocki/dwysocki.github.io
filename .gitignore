@@ -2,5 +2,10 @@
 _site/
 .sass-cache/
 
+# LaTeX
+*.aux
+*.log
+*.toc
+
 # emacs autosave
 *~

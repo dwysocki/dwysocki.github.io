@@ -1,0 +1,227 @@
+\documentclass{book}
+
+\title{Notes on Landau and Lifshitz -- Mechanics (3E)}
+\author{Daniel Wysocki}
+\date{}
+
+\usepackage[margin=1in]{geometry}
+\raggedbottom
+
+
+%% Mathy Things %%
+\usepackage{amsmath,amssymb,commath,mathabx,mathtools}
+\usepackage{cancel}
+\usepackage{physics,siunitx,tensor}
+
+%% Programmy Things %%
+\usepackage{verbatim}
+
+
+\usepackage{enumerate}
+
+
+
+
+%% Graphics %%
+\usepackage{pgfplots,tikz}
+
+%% Formatting %%
+% more powerful caption formatting
+\usepackage{caption}
+% enable subplots
+\usepackage{subcaption}
+% the tocloft package lets you redefine the Table of Contents (ToC)
+\usepackage{tocloft}
+
+% allow conservative page breaks in multi-line equations
+\allowdisplaybreaks[1]
+
+
+\renewcommand\cftchappresnum{Chapter } % prefix "Chapter " to chapter number in ToC
+\cftsetindents{chapter}{0em}{8em}      % set amount of indenting
+\cftsetindents{section}{2em}{6em}
+% Macros to redefine numbering of appendix sections (and to
+%   reset numbering when not in per-chapter area appendix)
+\newcommand\normalsecnums{%
+    \renewcommand\thesection{\thechapter.\arabic{section}}}
+\let\origchapter\chapter
+\renewcommand{\chapter}[1]{\normalsecnums
+    \origchapter{#1}}
+\newcommand\appsecnums{%   % execute this command before entering appendix area
+    \setcounter{section}{0}
+    \renewcommand\thesection{\appendixname~\Alph{section}}}
+
+% remove automatic paragraph indentation, while preserving the \indent
+\newlength\tindent
+\setlength{\tindent}{\parindent}
+\setlength{\parindent}{0pt}
+\renewcommand{\indent}{\hspace*{\tindent}}
+
+% reduce spacing around equations
+\usepackage[nodisplayskipstretch]{setspace}
+\setstretch{1.5}
+
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{The Equations of Motion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Generalized co-ordinates}
+
+The position of a classical particle in 3-space is defined by its position vector, $\vb{r} = (x, y, z)$. We may differentiate this to obtain its velocity, $\vb{v} = \dv*{\vb{r}}{t}$, and its acceleration, $\vb{a} = \dv*[2]{\vb{r}}{t}$. For a system of $N$ particles, we require $N$ position vectors, resulting in $3N$ coordinates.
+
+We need not use the cartesian coordinates $x$, $y$, $z$, but may instead choose to use any set of $s$ \textbf{generalized coordinates} $\qty{q_i}_{i=1}^s$ which fully describe the system. $s$ is called the \textbf{degrees of freedom}. In the case of $N$ particles, $s = 3N$. $\dot{q}_i$ and $\ddot{q}_i$ are called the \textbf{generalized velocities} and \textbf{accelerations}, respectively. In order to fully determine the system for all times, it is necessary and sufficient to specify $\qty{q_i}_{i=1}^s \cup \qty{\dot{q}_i}_{i=1}^s$. Often we will use the shorthand $q$, $\dot{q}$, $\ddot{q}$ for the sets $\qty{q_i}_{i=1}^s$, $\qty{\dot{q}_i}_{i=1}^s$, $\qty{\ddot{q}_i}_{i=1}^s$.
+
+The relations between $q$, $\dot{q}$, and $\ddot{q}$ are called the \textbf{equations of motion}. They are second-order differential equations for $q(t)$, and by specifying initial conditions $q_0$, $\dot{q}_0$, one may integrate them to find the state of the system at any time.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{The principle of least action}
+
+The \textbf{principle of least action} or \textbf{Hamilton's principle} states that every classical mechanical system is defined by a function $L(q, \dot{q}, t)$, called the \textbf{Lagrangian}, subject to the following condition. The integral of the Lagrangian over a time interval of interest, $t_1$ to $t_2$, is called the action:
+%
+\begin{equation}
+  S = \int_{t_1}^{t_2} L(q, \dot{q}, t) \dd{t}.
+\end{equation}
+%
+The condition is that $q$ and $\dot{q}$ evolve in the manner which \emph{minimizes} the action, hence the phrase ``least action''. To put it mathematically,
+%
+\begin{equation}
+  (q, \dot{q}) = \argmin_{q', \dot{q}'} S(q', \dot{q}')
+\end{equation}
+
+Now we will derive the differential equations which minimize the action. To make the derivation simple, we work in the special case of 1 degree of freedom, but the result will be valid for an arbitrary number, if we simply index the coordinates and velocities (i.e. $q \to q_i$, $\dot{q} \to \dot{q}_i$). We start by assuming that $q(t)$ is the coordinate that minimizes $S$. That means if we vary $q(t)$ by some $\var{q}(t)$, which is small over the interval $[t_1, t_2]$, then $S$ must increase. Since we are interested in the path taken from $(t_1, q_1)$ to $(t_2, q_2)$, we require that this variation be zero at $t_1$ and $t_2$, so that $(q + \var{q})(t_i) = q_i$.
+
+When we make the substitution $q(t) \to q(t) + \var{q}(t)$ and $\dot{q}(t) \to \dot{q}(t) + \var{\dot{q}}(t)$, the resulting change in $S$ is
+%
+\begin{equation}
+  \Delta S =
+  \int_{t_1}^{t_2} L(q + \var{q}, \dot{q} + \var{\dot{q}}, t) \dd{t}
+- \int_{t_1}^{t_2} L(q, \dot{q}, t) \dd{t}.
+\end{equation}
+%
+Using the Taylor expansion,
+%
+\begin{equation}
+  f(\vb{x}) =
+  f(\vb{a}) +
+  \qty(\pdv{f}{\vb{x}})(\vb{a}) +
+  \order*{x^2},
+\end{equation}
+%
+and keeping only the lowest-order term, we get
+%
+\begin{align*}
+  \Delta S &=
+  \eval*[\Delta S|_{(q,\dot{q})=(0,0)} + \order{q,\dot{q}}
+  \\ &=
+  \int_{t_1}^{t_2} L(\var{q}, \var{\dot{q}}, t) \dd{t} -
+  \int_{t_1}^{t_2} L(0, 0, t) \dd{t} + \order{q, \dot{q}}
+  \\ &=
+  \var \int_{t_1}^{t_2} L(q, \dot{q}, t) \dd{t} + \order{q, \dot{q}}
+  \\ &=
+  \var S + \order{q, \dot{q}}.
+\end{align*}
+%
+The only necessary condition for $S$ to be minimized is for $\var{S}$ to be zero, meaning
+%
+\begin{equation}
+  \var \int_{t_1}^{t_2} L(q, \dot{q}, t) \dd{t} = 0.
+\end{equation}
+%
+Taking the variation inside the integral, and using the chain rule, we get
+%
+\begin{equation}
+  \int_{t_1}^{t_2} \qty(
+    \pdv{L}{q} \var{q} + \pdv{L}{\dot{q}} \var{\dot{q}}
+  ) \dd{t} = 0.
+\end{equation}
+%
+Now note that $\var{\dot{q}} = \dv*{t}(\var{q})$. With this in mind, we integrate the right-most additive term in the integral, using integration by parts
+%
+\begin{equation}
+  \int_a^b u(t) v'(t) \dd{t} =
+  \eval*[u(t) v(t)|_a^b - \int_a^b v(t) u'(t) \dd{t},
+\end{equation}
+%
+defining
+%
+\begin{align*}
+  u(t) &= \pdv{L}{\dot{q}}, & v(t) &= \var{q},
+  \\
+  \dv{u}{t} &= \dv{t} \pdv{L}{\dot{q}}, & \dv{v}{t} &= \dv{\var{q}}{t}.
+\end{align*}
+%
+This results in
+%
+\begin{equation}
+  \eval[\pdv{L}{\dot{q}} \var{q}|_{t_1}^{t_2} +
+  \int_{t_1}^{t_2} \qty( \pdv{L}{q} - \dv{t} \pdv{L}{\dot{q}} ) \var{q} \dd{t} =
+  0.
+\end{equation}
+%
+We have already established that $\var{q}(t_1) = \var{q}(t_2) = 0$, which means that the already-integrated term on the left is zero. Now we are left with
+%
+\begin{equation}
+  \int_{t_1}^{t_2} \qty( \pdv{L}{q} - \dv{t} \pdv{L}{\dot{q}} ) \var{q} \dd{t} =
+  0,
+\end{equation}
+%
+which must hold for arbitrary $\var{q}$, since that was never specified, aside from its value at the end-points $t_1$, $t_2$. As a result, the term in parentheses must always be zero over the interval, meaning
+%
+\begin{equation}
+  \pdv{L}{q} = \dv{t} \partial{L}{\dot{q}},
+\end{equation}
+%
+or in general
+%
+\begin{equation}
+  \pdv{L}{q_i} = \dv{t} \partial{L}{\dot{q_i}}.
+\end{equation}
+%
+This set of $s$ equations is called \textbf{Lagrange's equations}. Their solution depends on $2s$ constants, $q_i(t_0)$, $\dot{q}_i(t_0)$.
+
+The Lagrangian obeys a particular additivity property. Consider a system partitioned into two parts, $A$ and $B$. Let $L_A$ and $L_B$ be the Lagrangians of the two parts, if they were closed systems. If one considers the limit in which the two parts are so far apart that their interactions may be neglected, one arrives at
+%
+\begin{equation}
+  \lim L = L_A + L_B.
+\end{equation}
+%
+This property shows that the Lagrangians of two non-interacting systems are seperable, i.e. they do not contain any cross-terms.
+
+The Lagrangian also obeys a particular scalar multiplication property. The motion describing an isolated system is equivalent for the Lagrangians $L$ and $c L$, where $c$ is an arbitrary scalar. This follows from the definition of the action. However, the additive property imposes a constraint on this: the Lagrangians of the two parts must be multiplied by the \emph{same} scalar. So in order for $L_A + L_B$ to produce the same behavior as $a L_A + b L_B$, one must have $a = b$.
+
+The Lagrangian also obeys something like a gauge condition. If one has two lagrangians, $L$ and $L'$, where
+%
+\begin{equation}
+  L'(q, \dot{q}, t) = L(q, \dot{q}, t) + \dv{t} f(q, t),
+\end{equation}
+%
+and $f$ is an arbitrary function of $t$ and $q(t)$, then, the action for $L'$ is given by
+%
+\begin{equation}
+  S' =
+  \int_{t_1}^{t_2} L'(q, \dot{q}, t) \dd{t} =
+  \int_{t_1}^{t_2} L(q, \dot{q}, t) \dd{t} + \int_{t_1}^{t_2} \dv{f}{t} \dd{t} =
+  S + f(q_2, t_2) - f(q_1, t_1).
+\end{equation}
+%
+The only difference between $S$ and $S'$ is the function's value at the ends of the interval of interest. Since the values of $S$ and $S'$ are unchanged by variations at these endpoints, $\var{S} = \var{S'}$, so $\var{S} = 0$ and $\var{S'} = 0$ result in the same equations of motion.
+
+
+\end{document}
