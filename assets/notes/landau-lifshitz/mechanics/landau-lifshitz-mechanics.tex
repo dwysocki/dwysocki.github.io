@@ -84,7 +84,7 @@
 
 The position of a classical particle in 3-space is defined by its position vector, $\vb{r} = (x, y, z)$. We may differentiate this to obtain its velocity, $\vb{v} = \dv*{\vb{r}}{t}$, and its acceleration, $\vb{a} = \dv*[2]{\vb{r}}{t}$. For a system of $N$ particles, we require $N$ position vectors, resulting in $3N$ coordinates.
 
-We need not use the cartesian coordinates $x$, $y$, $z$, but may instead choose to use any set of $s$ \textbf{generalized coordinates} $\qty{q_i}_{i=1}^s$ which fully describe the system. $s$ is called the \textbf{degrees of freedom}. In the case of $N$ particles, $s = 3N$. $\dot{q}_i$ and $\ddot{q}_i$ are called the \textbf{generalized velocities} and \textbf{accelerations}, respectively. In order to fully determine the system for all times, it is necessary and sufficient to specify $\qty{q_i}_{i=1}^s \cup \qty{\dot{q}_i}_{i=1}^s$. Often we will use the shorthand $q$, $\dot{q}$, $\ddot{q}$ for the sets $\qty{q_i}_{i=1}^s$, $\qty{\dot{q}_i}_{i=1}^s$, $\qty{\ddot{q}_i}_{i=1}^s$.
+We need not use the Cartesian coordinates $x$, $y$, $z$, but may instead choose to use any set of $s$ \textbf{generalized coordinates} $\qty{q_i}_{i=1}^s$ which fully describe the system. $s$ is called the \textbf{degrees of freedom}. In the case of $N$ particles, $s = 3N$. $\dot{q}_i$ and $\ddot{q}_i$ are called the \textbf{generalized velocities} and \textbf{accelerations}, respectively. In order to fully determine the system for all times, it is necessary and sufficient to specify $\qty{q_i}_{i=1}^s \cup \qty{\dot{q}_i}_{i=1}^s$. Often we will use the shorthand $q$, $\dot{q}$, $\ddot{q}$ for the sets $\qty{q_i}_{i=1}^s$, $\qty{\dot{q}_i}_{i=1}^s$, $\qty{\ddot{q}_i}_{i=1}^s$.
 
 The relations between $q$, $\dot{q}$, and $\ddot{q}$ are called the \textbf{equations of motion}. They are second-order differential equations for $q(t)$, and by specifying initial conditions $q_0$, $\dot{q}_0$, one may integrate them to find the state of the system at any time.
 
@@ -202,11 +202,11 @@ The Lagrangian obeys a particular additivity property. Consider a system partiti
   \lim L = L_A + L_B.
 \end{equation}
 %
-This property shows that the Lagrangians of two non-interacting systems are seperable, i.e. they do not contain any cross-terms.
+This property shows that the Lagrangians of two non-interacting systems are separable, i.e. they do not contain any cross-terms.
 
 The Lagrangian also obeys a particular scalar multiplication property. The motion describing an isolated system is equivalent for the Lagrangians $L$ and $c L$, where $c$ is an arbitrary scalar. This follows from the definition of the action. However, the additive property imposes a constraint on this: the Lagrangians of the two parts must be multiplied by the \emph{same} scalar. So in order for $L_A + L_B$ to produce the same behavior as $a L_A + b L_B$, one must have $a = b$.
 
-The Lagrangian also obeys something like a gauge condition. If one has two lagrangians, $L$ and $L'$, where
+The Lagrangian also obeys something like a gauge condition. If one has two Lagrangians, $L$ and $L'$, where
 %
 \begin{equation}
   L'(q, \dot{q}, t) = L(q, \dot{q}, t) + \dv{t} f(q, t),
@@ -222,6 +222,33 @@ and $f$ is an arbitrary function of $t$ and $q(t)$, then, the action for $L'$ is
 \end{equation}
 %
 The only difference between $S$ and $S'$ is the function's value at the ends of the interval of interest. Since the values of $S$ and $S'$ are unchanged by variations at these endpoints, $\var{S} = \var{S'}$, so $\var{S} = 0$ and $\var{S'} = 0$ result in the same equations of motion.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Galileo's relativity principle}
+
+In the classical regime, there always exists a \textbf{reference frame} in which space is homogeneous and isotropic, and time is homogeneous. Such a frame is called an \textbf{inertial frame}. In an inertial frame, a free body at rest remains at rest. We now investigate the Lagrangian of a free body in an inertial frame.
+
+The homogeneity of space and time imply that there be no explicit functional dependence on $\vb{r}$ and $t$ in the Lagrangian. The isotropy of space implies that there be no explicit functional dependence on the direction of the velocity, $\vu{v}$. Thus the Lagrangian must only be a function of the magnitude of the velocity, or likewise its square: $L = L(v^2)$. Lagrange's equation then becomes
+%
+\begin{equation}
+  \dv{t} \pdv{L}{\vb{v}} - \underbrace{\pdv{L}{\vb{r}}}_{\vb{0}} =
+  \dv{t} \pdv{L}{\vb{v}} =
+  \vb{0}
+\end{equation}
+%
+In other words, $\pdv{L}{\vb{v}}$ is constant. Since $\pdv{L}{\vb{v}}$ is only a function of $\vb{v}$, and its time derivative is zero, it follows that the time derivative of $\vb{v}$ must also be zero, i.e. $\vb{v}$ is constant. Thus we have generalized the claim that a free body at rest remains at rest in an inertial frame, and have proven the \textbf{law of inertia}: the velocity $\vb{v}$ of a free body in an inertial frame remains constant. This is also known as \textbf{Newton's first law}.
+
+Now consider not one, but two inertial reference frames, denoted $K$ and $K'$. These frames are moving by a velocity $\vb{V}$ with respect to each other. A \textbf{Galilean transformation} of the coordinates of a point in $K'$, $\vb{r}'$, to its equivalent in $K$, $\vb{r}$, is given by
+%
+\begin{gather}
+  \vb{r} = \vb{r}' + \vb{V} t
+  \\
+  t = t'
+\end{gather}
+%
+\textbf{Galileo's relativity principle} postulates that that the equations of motion of a particle are invariant under such a transformation.
+
 
 
 \end{document}

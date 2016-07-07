@@ -26,7 +26,6 @@ Disclaimer: *I do not claim ownership of any materials taken from textbooks in m
 - [PHYS-211 (F'15): University Physics I (TA)](
     https://dwysocki.github.io/PHYS-211-F15)
 
-
 # SUNY Oswego
 
 ## Computer Science
