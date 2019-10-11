@@ -20,14 +20,14 @@ I recieved my Bachelor's degree in 2015 from the State University of New York at
 
 Citations:
 
-[^popmodelspaper] [Wysocki, Lange, O'Shaughnessy (2019)](https://doi.org/10.1103/PhysRevD.100.043012)
-[^snkicks] [Wysocki, Gerosa, O'Shaughnessy, et al. (2018)](https://doi.org/10.1103/PhysRevD.97.043014)
-[^agnbbh] [McKernan, Ford, O'Shaughnessy, Wysocki (2019)](https://arxiv.org/abs/1907.04356)
-[^hierarchical] Doctor, Wysocki, O'Shaughnessy, et al. (2019) in prep
-[^eos] Wysocki et al (2019) in prep
-[^GW170817] [Abbott, B. P.; et al. (2017)](https://doi.org/10.1103%2FPhysRevLett.119.161101)
-[^GW170817properties] [B. P. Abbott et al. (2019)](https://doi.org/10.1103/PhysRevX.9.011001)
-[^GWTC1] [B. P. Abbott et al. (2019)](https://doi.org/10.1103/PhysRevX.9.031040)
-[^GWTC1pop] [B. P. Abbott et al. (2019)](https://arxiv.org/abs/1811.12940)
-[^cepheidlc] [Bellinger, Wysocki, Kanbur (2015)](https://doi.org/10.5281/zenodo.34418)
-[^lmcgeom] [Deb, Ngeow, Kanbur, Singh, Wysocki, Kumar](https://doi.org/10.1093/mnras/sty1124)
+[^popmodelspaper]: [Wysocki, Lange, O'Shaughnessy (2019)](https://doi.org/10.1103/PhysRevD.100.043012)
+[^snkicks]: [Wysocki, Gerosa, O'Shaughnessy, et al. (2018)](https://doi.org/10.1103/PhysRevD.97.043014)
+[^agnbbh]: [McKernan, Ford, O'Shaughnessy, Wysocki (2019)](https://arxiv.org/abs/1907.04356)
+[^hierarchical]: Doctor, Wysocki, O'Shaughnessy, et al. (2019) in prep
+[^eos]: Wysocki et al (2019) in prep
+[^GW170817]: [Abbott, B. P.; et al. (2017)](https://doi.org/10.1103%2FPhysRevLett.119.161101)
+[^GW170817properties]: [B. P. Abbott et al. (2019)](https://doi.org/10.1103/PhysRevX.9.011001)
+[^GWTC1]: [B. P. Abbott et al. (2019)](https://doi.org/10.1103/PhysRevX.9.031040)
+[^GWTC1pop]: [B. P. Abbott et al. (2019)](https://arxiv.org/abs/1811.12940)
+[^cepheidlc]: [Bellinger, Wysocki, Kanbur (2015)](https://doi.org/10.5281/zenodo.34418)
+[^lmcgeom]: [Deb, Ngeow, Kanbur, Singh, Wysocki, Kumar](https://doi.org/10.1093/mnras/sty1124)
