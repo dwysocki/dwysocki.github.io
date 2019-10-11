@@ -6,9 +6,28 @@ layout: page
   <img alt="Daniel Wysocki" src="{{site.baseurl}}/assets/images/profile.jpg">
 </div>
 
+I am finishing up my Ph.D. studies in the [Center for Computational Relativity and Gravitation](ccrg.rit.edu) at [RIT](rit.edu).  I work on data analysis and statistics for merging black holes and neutron stars detected with gravitational waves, as a member of the [LIGO Scientific Collaboration](ligo.org).
 
-I am beginning my Ph.D. studies in the [School of Physics & Astronomy's](http://www.rit.edu/~w-physic/) [Astrophysical Sciences & Technology program](https://www.rit.edu/cos/astrophysics/) at the [Rochester Institute of Technology (RIT)](https://www.rit.edu/). Throughout my first year, I will be working as a teaching assistant for introductory physics classes. During this time, I will be searching for a research advisor, whom I will work with for the remainder of my Ph.D. While my research topic has not yet been chosen, I have a strong interest in applying data mining and machine learning algorithms to extract patterns and new discoveries from the datasets collected by projects such as [Gaia](http://sci.esa.int/gaia/), [SDSS](http://www.sdss.org/), and the upcoming [LSST](http://www.lsst.org/lsst/). This is a rapidly growing, new area of astronomy, which I believe will become prevalent in the coming decades.
+My research mainly involves characterizing the properties of populations of merging black holes and neutron stars, e.g., the rate at which they merge [^popmodelspaper], their distribution of masses and spins [^popmodelspaper], the physical processes which led to their formation [^snkicks] [^agnbbh] [^hierarchical], and the nuclear equation of state for neutron stars [^eos].  Most of my research utilizes a powerful, general purpose population inference engine I have developed, [PopModels](https://git.ligo.org/daniel.wysocki/bayesian-parametric-population-models), which is freely available, and I encourage people interested in using it in their own research to reach out to me.  I also have a number of significant publications as a member of the LIGO Scientific Collaboration, including the first detection of gravitational waves from a binary neutron star merger [^GW170817], constraints on the properties of that binary neutron star [^GW170817properties], the catalog of gravitational wave transients in LIGO and Virgo's first two observing runs [^GWTC1], and the first population analysis on said catalog [^GWTC1pop].
 
-I graduated from [SUNY Oswego](http://www.oswego.edu), where I obtained my B.S. in Physics and Computer Science, with an Astronomy minor. I worked on several astronomical research projects under the advisement of [Shashi Kanbur](http://oswego.edu/~kanbur), involving various aspects of [Cepheid variable stars](https://en.wikipedia.org/wiki/Cepheid_variable), and am currently continuing a project on the structure of the [Large Magellanic Cloud](https://en.wikipedia.org/wiki/Large_Magellanic_Cloud) as traced by Cepheids. I also worked on an AI research project, under the advisement of [Craig Graci](http://http://www.cs.oswego.edu/~blue/), which utilizes [hidden Markov models](https://en.wikipedia.org/wiki/Hidden_Markov_model) to represent musical melodies for song analysis and generation ([semester paper](http://dwysocki.github.io/csc466/assets/papers/semester-paper.pdf)).
+Since Fall 2016, I have run an informal seminar/workshop series on campus for people interested in [scientific computing](http://rit-scg.com/), which brings together undergrads, grad students, postdocs, and faculty across many scientific and computational disciplines.
 
-In the summer of 2015, I interned at NASA's [JPL](https://en.wikipedia.org/wiki/Jet_Propulsion_Laboratory), where I was tasked with finding bugs in a software package which simulates the thermodynamics of Saturn and its rings. The accuracy of this simulation will play an important role in the [Cassini Grand Finale](http://saturn.jpl.nasa.gov/news/cassinifeatures/feature20140630/).
+In the past I have interned at NASA's Jet Propulsion Laboratory, during the summers of 2015 and 2016.  There I worked in the Mission Sequencing Subsystems for the Cassini spacecraft, which was orbiting Saturn at the time.  My task at NASA was to validate one of the simulations of Saturn's heating of Cassini, which was being used to plan out future observations for the spacecraft.
+
+I recieved my Bachelor's degree in 2015 from the State University of New York at Oswego, with a dual major in physics and computer science, and a minor in Astronomy.  I graduated with the Charles H. Jerred Memorial Award for Outstanding Astronomy Student, which was last awarded in 2010.  During my time as an undergraduate, I worked with Dr. Shashi Kanbur variable star research, including [light curve analysis](https://github.com/astroswego/plotypus) [^cepheidlc], mapping the Magellanic Clouds [^lmcgeom], and the extragalactic distance ladder.  Some notable projects I completed in my computer science coursework were a [MiniJava compiler](https://github.com/dwysocki/mini-java) and an [AI for music composition](https://github.com/dwysocki/hidden-markov-music).
+
+
+
+Citations:
+
+[^popmodelspaper] [Wysocki, Lange, O'Shaughnessy (2019)](https://doi.org/10.1103/PhysRevD.100.043012)
+[^snkicks] [Wysocki, Gerosa, O'Shaughnessy, et al. (2018)](https://doi.org/10.1103/PhysRevD.97.043014)
+[^agnbbh] [McKernan, Ford, O'Shaughnessy, Wysocki (2019)](https://arxiv.org/abs/1907.04356)
+[^hierarchical] Doctor, Wysocki, O'Shaughnessy, et al. (2019) in prep
+[^eos] Wysocki et al (2019) in prep
+[^GW170817] [Abbott, B. P.; et al. (2017)](https://doi.org/10.1103%2FPhysRevLett.119.161101)
+[^GW170817properties] [B. P. Abbott et al. (2019)](https://doi.org/10.1103/PhysRevX.9.011001)
+[^GWTC1] [B. P. Abbott et al. (2019)](https://doi.org/10.1103/PhysRevX.9.031040)
+[^GWTC1pop] [B. P. Abbott et al. (2019)](https://arxiv.org/abs/1811.12940)
+[^cepheidlc] [Bellinger, Wysocki, Kanbur (2015)](https://doi.org/10.5281/zenodo.34418)
+[^lmcgeom] [Deb, Ngeow, Kanbur, Singh, Wysocki, Kumar](https://doi.org/10.1093/mnras/sty1124)

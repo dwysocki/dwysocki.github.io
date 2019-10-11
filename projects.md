@@ -4,10 +4,17 @@ title: "Projects"
 permalink: /projects/
 ---
 
-Here are some of my notable projects. For everything else, take a look at my
-[github account](https://github.com/dwysocki/).
+Here are some of my notable projects. For everything else, take a look at my projects on
+[GitHub](https://github.com/dwysocki/), [GitLab](https://gitlab.com/dwysocki), and [LIGO's GitLab](https://git.ligo.org/daniel.wysocki/).
 
 # Current
+
+- [PopModels](https://git.ligo.org/daniel.wysocki/bayesian-parametric-population-models)
+    - a Python framework for modeling and inferring properties of populations of
+      objects, with specific applications (but not limited to) LIGO sources
+
+
+# Past
 
 - [plotypus](https://astroswego.github.io/plotypus/)
     - a Python library and command line tool for analyzing the light curves of
@@ -23,9 +30,6 @@ Here are some of my notable projects. For everything else, take a look at my
 - [Leavitt](https://github.com/astroswego/leavitt)
     - a command line utility for fitting Leavitt's law and its variants, for
       determining the distances to variable stars
-
-
-# Past
 
 - [mini-java](https://github.com/dwysocki/mini-java)
     - a working compiler for
