@@ -6,6 +6,8 @@ layout: page
   <img alt="Daniel Wysocki" src="{{site.baseurl}}/assets/images/profile.jpg">
 </div>
 
+**NOTICE:** This site has not been updated in years.  A new site is under construction and will replace this one soon.
+
 I am finishing up my Ph.D. studies in the [Center for Computational Relativity and Gravitation](https://ccrg.rit.edu) at [RIT](https://rit.edu).  I work on data analysis and statistics for merging black holes and neutron stars detected with gravitational waves, as a member of the [LIGO Scientific Collaboration](https://ligo.org).
 
 My research mainly involves characterizing the properties of populations of merging black holes and neutron stars, e.g., the rate at which they merge [^popmodelspaper], their distribution of masses and spins [^popmodelspaper], the physical processes which led to their formation [^snkicks] [^agnbbh] [^hierarchical], and the nuclear equation of state for neutron stars [^eos].  Most of my research utilizes a powerful, general purpose population inference engine I have developed, [PopModels](https://git.ligo.org/daniel.wysocki/bayesian-parametric-population-models), which is freely available, and I encourage people interested in using it in their own research to reach out to me.  I also have a number of significant publications as a member of the LIGO Scientific Collaboration, including the first detection of gravitational waves from a binary neutron star merger [^GW170817], constraints on the properties of that binary neutron star [^GW170817properties], the catalog of gravitational wave transients in LIGO and Virgo's first two observing runs [^GWTC1], and the first population analysis on said catalog [^GWTC1pop].
